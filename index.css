@@ -7,7 +7,7 @@ html {
   margin: 0px;
   padding: 0px;
   font-family: Helvetica Now Text, Helvetica, Arial, sans-serif;
-
+  /* transition: opacity 0.4s ease; */
 }
 
 header {

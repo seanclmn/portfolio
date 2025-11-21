@@ -6,14 +6,38 @@
   <link rel="preload" as="style" href="index.css">
   <link rel="preload" as="image" href="crosswalk.jpg">
   <link rel="preload" as="image" href="flowers.jpg">
-  <link rel="preload" as="image" href="nana.jpg">
   <link rel="preload" as="image" href="flyhigher.jpg">
   <link rel="preload" as="image" href="goodmorning.jpg">
   <link rel="preload" as="image" href="shibuyacrossing.png">
-
+  <link rel="preload" as="image" href="nana.jpg">
   <link rel="stylesheet" href="index.css">
   <title>Sean Coleman</title>
+  <script>
+    const images = [
+      "crosswalk.jpg",
+      "flowers.jpg",
+      "nana.jpg",
+      "flyhigher.jpg",
+      "goodmorning.jpg",
+      "shibuyacrossing.png"
+    ];
+
+    async function preloadImages() {
+      // preload + decode guarantees no flicker
+      const promises = images.map(src => {
+        const img = new Image();
+        img.src = src;
+        return img.decode(); // <-- ensures pixels are ready
+      });
+
+      await Promise.all(promises);
+      document.body.classList.add("ready");
+    }
+
+    preloadImages();
+  </script>
 </head>
+
 
 <header>
   <nav>
@@ -82,14 +106,14 @@
       OFFICIA MODI?
     </p>
     <div class="image" id="shibuya">
-      <img src="goodmorning.jpg" alt="April 2024">
+      <img src="goodmorning.jpg" alt="April 2024" width="200px">
       <p class="image-tag">FARUK AKGUN APRIL 2024</p>
     </div>
   </div>
 
   <div class="row-section">
     <div class="image" id="shibuya">
-      <img src="shibuyacrossing.png" alt="Shibuya Crossing">
+      <img src="shibuyacrossing.png" alt="Shibuya Crossing" width="200px">
       <p class="image-tag">LISA MICHELLE BURNS</p>
     </div>
     <p>
