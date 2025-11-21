@@ -1,0 +1,120 @@
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica Now Text, Helvetica, Arial, sans-serif;
+
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.top-section {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.middle-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.azabudai-section {
+  width: 500px;
+  margin-top: -80px;
+}
+
+.row-section {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#crosswalk {
+  width: 600px;
+  margin-top: 40px;
+}
+
+#azabudai {
+  width: 30%;
+  max-width: 150px;
+  margin-left: 500px;
+
+}
+
+#shibuya {
+  width: 40%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+#flowers {
+  width: 200px;
+  margin-top: -350px;
+  margin-right: 600px;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+li {
+  margin-left: 20px;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 20px;
+  max-width: 300px;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: Helvetica Now Text, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+a {
+  font-family: Helvetica Now Text, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+
+img {
+  width: 100%;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.image-tag {
+  font-size: 11px;
+  margin: 4px;
+  color: rgb(130, 130, 130)
+}
