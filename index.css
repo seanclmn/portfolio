@@ -58,6 +58,11 @@ header {
   margin-top: 40px;
 }
 
+#driedflower {
+  width: 100px;
+  margin-top: -100px;
+}
+
 #nana {
   width: 150px;
   margin-left: 500px;
@@ -123,4 +128,9 @@ img {
   font-size: 11px;
   margin: 4px;
   color: rgb(130, 130, 130)
+}
+
+.screenplay {
+  font-family: monospace;
+  font-size: 12px;
 }
